@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Compiler GUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">Gran Compiler GUI</div>
+    <div class="container">
+        <div class="upper-row">
+            <div class="editor-panel">
+                <div class="editor-label">Write your Gran program here:</div>
+                <textarea id="codeInput" placeholder="Write your Gran program here..."></textarea>
+                <button onclick="runCompiler()">Run</button>
+            </div>
+            <div class="output-section final-output-panel">
+                <h2>Final Output</h2>
+                <pre id="finalOutput"></pre>
+            </div>
+        </div>
+        <div class="lower-row">
+            <div class="output-section">
+                <h2>Lexical Analysis Output</h2>
+                <pre id="lexerOutput"></pre>
+            </div>
+            <div class="output-section">
+                <h2>Parser Output</h2>
+                <pre id="parserOutput"></pre>
+            </div>
+            <div class="output-section">
+                <h2>IR Generation Output</h2>
+                <pre id="irOutput"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

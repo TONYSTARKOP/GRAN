@@ -1,0 +1,21 @@
+func factorial(n) {
+    var result = 1;
+    for (var i = 1; i <= n; i = i + 1) {
+        result = result * i;
+    }
+    return result;
+}
+
+var num = 5;
+var fact = factorial(num);
+
+screenit "Factorial of:";
+screenit num;
+screenit "is:";
+screenit fact;
+
+if (fact > 100) {
+    screenit "That's a big number!";
+} else {
+    screenit "That's manageable.";
+}
